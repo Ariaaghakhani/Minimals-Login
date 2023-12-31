@@ -1,0 +1,166 @@
+.embla {
+    --slide-spacing: 0rem;
+  }
+  .embla__viewport {
+    overflow: hidden;
+    position: relative;
+    &::after{
+      position: absolute;
+      top: 0;left: 0;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(0,0,0,1) 1%, rgba(0,0,0,0) 100%);
+      z-index: 1;
+    }
+  }
+  .embla__container {
+    backface-visibility: hidden;
+    display: flex;
+    touch-action: pan-y;
+    
+  }
+  .embla__slide {
+    display: flex;
+    min-width: 0;
+    position: relative;
+    >h4{
+      position: absolute;
+      color: #5be49b;
+      font-size: 12px;
+      font-weight: 700;
+      left: 1rem;
+      top: 50%;
+      z-index: 100;
+    }
+  }
+  .embla__slide__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+    width: 100%;
+  }
+  .embla__slide__number {
+    width: 4.6rem;
+    height: 4.6rem;
+    z-index: 1;
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    border-radius: 50%;
+    background-color: rgba(var(--background-site-rgb-value), 0.85);
+    line-height: 4.6rem;
+    font-weight: 900;
+    text-align: center;
+    pointer-events: none;
+  }
+  .embla__slide__number > span {
+    color: var(--brand-primary);
+    background-image: linear-gradient(
+      45deg,
+      var(--brand-primary),
+      var(--brand-secondary)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.6rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .embla__button {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .embla__buttons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+    right: .6rem;
+    z-index: 3;
+  }
+  .embla__button {
+    z-index: 3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+    opacity: 0.3;
+    transition: 0.4s;
+    &:hover {
+      opacity: 0.8;
+      transition: 0.4s;
+    }
+    &:nth-of-type(1){
+      transform: translateX(-30%);
+    }
+  }
+  .embla__button:disabled {
+    opacity: 0.3;
+  }
+  .embla__button__svg {
+    width: 50%;
+    height: 50%;
+   
+  }
+  .embla__dot {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .embla__dots {
+    z-index: 2;
+    top: 10%;
+    position: absolute;
+    left: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .embla__dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    display: flex;
+    align-items: center;
+    margin-right: 0.25rem;
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    background: rgba(91, 228, 155, 0.16);
+  }
+  .embla__dot:after {
+    background: rgb(91, 228, 155);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: 0.2;
+  }
+  .embla__dot--selected:after {
+    opacity: 1;
+  }
+

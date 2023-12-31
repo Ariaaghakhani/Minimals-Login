@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+.sideBar::-webkit-scrollbar-thumb,.navBar::-webkit-scrollbar-thumb{
+  width: 5px;
+  background: grey;
+  border-radius: 5px;
+}
+
+
+@keyframes rotation {
+  0% {
+      transform: rotate(32deg)
+  }
+
+  10% {
+      transform: rotate(64deg)
+  }
+
+  20% {
+      transform: rotate(96deg)
+  }
+
+  30% {
+      transform: rotate(128deg)
+  }
+
+  40% {
+      transform: rotate(160deg)
+  }
+
+  50% {
+      transform: rotate(192deg)
+  }
+
+  60% {
+      transform: rotate(224deg)
+  }
+
+  70% {
+      transform: rotate(256deg)
+  }
+
+  80% {
+      transform: rotate(288deg)
+  }
+
+  90% {
+      transform: rotate(310deg)
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.rotation{
+  animation: rotation 10s linear infinite;
+}
+
+
+@font-face {
+  font-family: "'Public Sans', sans-serif";
+  src: url(https://fonts.google.com/share?selection.family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900);
+}
