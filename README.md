@@ -1,7 +1,8 @@
 # Minimal Template :
 
 <p align="center">
-<img width="1512" alt="Screenshot 2023-12-31 at 11 04 50" src="https://github.com/Ariaaghakhani/Minimals-Login/assets/48532756/287f06ef-aa92-4c10-bd15-8f788f35853a">
+<img width="1512" alt="Screenshot" src="https://github.com/Ariaaghakhani/Minimals-Login/assets/48532756/287f06ef-aa92-4c10-bd15-8f788f35853a">
+<img width="1512" alt="Screenshot" src="https://github.com/Ariaaghakhani/Minimals-Login/assets/48532756/9400eb12-e545-4edf-94f8-dbd0d7319df9">
 
 </p>
 
